@@ -1,0 +1,20 @@
+##############################################################
+
+pibot.name=Pi Bot
+
+pibot.upload.protocol=arduino
+pibot.upload.maximum_size=30720
+pibot.upload.speed=57600
+
+pibot.bootloader.low_fuses=0xFF
+pibot.bootloader.high_fuses=0xDA
+pibot.bootloader.extended_fuses=0x05
+pibot.bootloader.path=arduino:atmega
+pibot.bootloader.file=ATmegaBOOT_168_atmega328_pro_8MHz.hex
+pibot.bootloader.unlock_bits=0x3F
+pibot.bootloader.lock_bits=0x0F
+
+pibot.build.mcu=atmega328p
+pibot.build.f_cpu=8000000L
+pibot.build.core=arduino:arduino
+pibot.build.variant=arduino:standard
