@@ -34,8 +34,8 @@ git config --global user.email "pi-bot@github.com"
 Now it is possible to make changes to the repo locally, then push changes. E.g I changed the README.md file locally and then pushed changes by:  
 
 ```  
-git commit -a
-git push -u origin master
+sudo git commit -a
+sudo git push -u origin master
 ```
 
 It should ask for your password and then proceed to install the changes. You can add authentication to 
@@ -45,13 +45,13 @@ remove the need to add the passwords each time.  See Github documentation for th
 Because most of what we're doing is text based its pretty convenient to use the GitHub website to edit files and commit the changes .  I've been doing this alot as its easier to then update the repo locally with a simple:
 
 ```
-git pull
+ sudo git pull
 ````
 
 ###Folder Structure
 
 I've just found out that the Arduino IDE expects each sketch (ending .ino) to exist in a folder of the same name. 
-For this reason we will need to have many folders. See [here](https://programmingelectronics.com/understanding-the-arduino-sketchbook-opening-and-saving-arduino-sketches/) for a guide on how the arduino uses the scketchbook. 
+For this reason we will need to have many folders. See [here](https://programmingelectronics.com/understanding-the-arduino-sketchbook-opening-and-saving-arduino-sketches/) for a guide on how the arduino uses the scketchbook. The arduino uses the same pattern for the examples directory. 
  
 ###Pushing a local repo to git
 
