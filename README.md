@@ -40,8 +40,17 @@ git push -u origin master
 
 It should ask for your password and then proceed to install the changes. You can add authentication to 
 remove the need to add the passwords each time.  See Github documentation for this. 
+
+###Editing on Github.com
+Because most of what we're doing is text based its pretty convenient to use the GitHub website to edit files and commit the changes .  I've been doing this alot as its easier to then update the repo locally with a simple:
+
+```
+git pull
+````
  
 ###Pushing a local repo to git
+
+**PLEASE IGNORE**
 This is what I did to create the intial repo in git:
 ```  
 git remote add origin  https://www.github.com/pi-bot/sketchbook.git
