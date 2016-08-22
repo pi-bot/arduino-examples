@@ -1,7 +1,7 @@
 # sketchbook
 The Arduino IDE sketchbook for the PiBot.  Contains all code examples for use with the arduino-tutorials repo.
 
-### installation
+### Installation
 From the PiBots raspberry Pi Terminal do:
 ```
 cd ~/
@@ -47,6 +47,11 @@ Because most of what we're doing is text based its pretty convenient to use the 
 ```
 git pull
 ````
+
+###Folder Structure
+
+I've just found out that the Arduino IDE expects each sketch (ending .ino) to exist in a folder of the same name. 
+For this reason we will need to have many folders. See [here](https://programmingelectronics.com/understanding-the-arduino-sketchbook-opening-and-saving-arduino-sketches/) for a guide on how the arduino uses the scketchbook. 
  
 ###Pushing a local repo to git
 
