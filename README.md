@@ -8,6 +8,43 @@ cd ~/
 rm -rf sketchebook
 git clone https://www.github.com/pi-bot/sketchbook.git
 ```
-This will delete the arduiono sketches folder and replace with our piBot version.
+This will delete the arduiono sketches folder and replace with our piBot version. This folder is now a repo 
+and linked to the remote URL. You can check this by:
+
+```
+cd sketchbook
+git remote -v
+```
+
+This should give the details of the repo of your current folder. In order to change and upload changes to
+ the repo you need to do some preparation: 
+```
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+
+These need to be the same as the user name and password that you have set up for your GitHub account.
+
+For me this is:
+```
+git config --global user.email "code@pibot.org"
+git config --global user.email "pi-bot@github.com"
+```
+
+Now it is possible to make changes to the repo locally, then push changes by" 
+
+```  
+git push -u origin master
+```
+
+It should ask for your password and then proceed to install the changes. You can add authentication to 
+remove the need to add the passwords each time.  See Github documentation for this. 
+ 
+###Pushing a local repo to git
+This is what I did to create the intial repo in git:
+```  
+git remote add origin  https://www.github.com/pi-bot/sketchbook.git
+```
+
 
 TBC.
