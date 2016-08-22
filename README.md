@@ -31,9 +31,10 @@ git config --global user.email "code@pibot.org"
 git config --global user.email "pi-bot@github.com"
 ```
 
-Now it is possible to make changes to the repo locally, then push changes by" 
+Now it is possible to make changes to the repo locally, then push changes. E.g I changed the README.md file locally and then pushed changes by:  
 
 ```  
+git commit -a
 git push -u origin master
 ```
 
