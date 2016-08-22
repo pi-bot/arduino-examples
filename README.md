@@ -1,21 +1,21 @@
 # sketchbook
-The Arduino IDE sketchbook for the PiBot.  Contains all code examples for use with the arduino-tutorials repo.
+The Arduino IDE sketch examples for the PiBot learning course.  Contains all code examples for use with the arduino-tutorials repo.
 
-### Installation
-From the PiBots raspberry Pi Terminal do:
-```
-cd ~/
-rm -rf sketchebook
-git clone https://www.github.com/pi-bot/sketchbook.git
-```
-This will delete the arduiono sketches folder and replace with our piBot version. This folder is now a repo 
-and linked to the remote URL. You can check this by:
+### Setup
+This repo is designed to replace the default example files in the Arduiono IDE. (Shown on the menu under File > Examples)
+It needs to be installed at a specific location on the system. Here we'll backup the default folder and install the repo:
 
 ```
-cd sketchbook
+sudo mv /usr/share/arduino/examples /usr/share/arduino/examples.original 
+cd /usr/share/arduino/
+sudo git clone https://www.github.com/pi-bot/examples.git
+
+```
+This will rename the arduiono examples folder so it can always be restored at a later date. **NB** we need to use *sudo* as the directory is now in the **/usr/share/** area that requires elevated privileges to make folder changes.  We've now installed the examples repo and linked to the remote URL. You can check this by:
+```
+cd examples
 git remote -v
 ```
-
 This should give the details of the repo of your current folder. In order to change and upload changes to
  the repo you need to do some preparation: 
 ```
